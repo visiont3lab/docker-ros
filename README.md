@@ -32,7 +32,7 @@ sudo apt install xfce4-terminal
 Launch simulation
 
 ```
-cd $MYROSWORKSPACE/srcipts && ./launch_laser_sim.sh
+cd $MYROSWORKSPACE/scripts && ./launch_laser_sim.sh
 ```
 
 After finishing remember to type 
