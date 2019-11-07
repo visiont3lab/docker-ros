@@ -22,13 +22,13 @@ docker build -t ros_melodic_desktop_full .
 Real world docker
 
 ```
-./start_docker_real.sh
+cd $MYWORKSPACE/scripts && ./start_docker_real.sh
 ```
 
 Simulation docker 
 
 ```
-./start_docker_sim.sh
+cd $MYWORKSPACE/scripts && ./start_docker_sim.sh
 ```
 
 ## Useful commands

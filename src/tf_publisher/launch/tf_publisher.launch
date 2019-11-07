@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="tf_publisher" type="tf_publisher.py"  name="test_tf_publisher" output="screen" >
+    </node>
+</launch>
