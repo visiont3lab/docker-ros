@@ -9,8 +9,11 @@ Install docker
 Setup environment variable
 
 ```
+cd $HOME
+git clone https://github.com/visiont3lab/docker-ros.git
 echo "export MYROSWORKSPACE=$HOME/docker-ros" >> $HOME/.bashrc && source $HOME/.bashrc
 ```
+Feel free to modify the path as you like!
 
 Build docker
 
@@ -19,6 +22,14 @@ cd $MYROSWORKSPACE && docker build -t ros_melodic_desktop_full .
 ```
 
 ## Launch laser simulation
+
+We need xfce4-terminal
+
+```
+sudo apt install xfce4-terminal
+```
+
+Launch simulation
 
 ```
 cd $MYROSWORKSPACE/srcipts && ./launch_laser_sim.sh
