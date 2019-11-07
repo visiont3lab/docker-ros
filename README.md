@@ -11,7 +11,7 @@ Setup environment variable
 ```
 cd $HOME
 git clone https://github.com/visiont3lab/docker-ros.git
-echo "export MYROSWORKSPACE=$HOME/docker-ros" >> $HOME/.bashrc && source $HOME/.bashrc
+echo "export ROS_LASER_SIM=$HOME/docker-ros-laser-sim" >> $HOME/.bashrc && source $HOME/.bashrc
 ```
 Feel free to modify the path as you like!
 
@@ -32,7 +32,7 @@ sudo apt install xfce4-terminal
 Launch simulation
 
 ```
-cd $MYROSWORKSPACE/scripts && ./launch_laser_sim.sh
+cd $ROS_LASER_SIM/scripts && ./launch_laser_sim.sh
 ```
 
 After finishing remember to type 
@@ -46,13 +46,13 @@ docker stop ros_melodic_desktop_sim
 Real world docker
 
 ```
-cd $MYROSWORKSPACE/scripts && ./start_docker_real.sh
+cd $ROS_LASER_SIM/scripts && ./start_docker_real.sh
 ```
 
 Simulation docker 
 
 ```
-cd $MYROSWORKSPACE/scripts && ./start_docker_sim.sh
+cd $ROS_LASER_SIM/scripts && ./start_docker_sim.sh
 ```
 
 ## Useful commands

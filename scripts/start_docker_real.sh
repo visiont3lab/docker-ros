@@ -7,6 +7,6 @@
         --env="QT_X11_NO_MITSHM=1" \
         --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
         --env ROS_MASTER_URI=http://localhost:11311 \
-        -v $MYROSWORKSPACE/src:/root/catkin_ws/src/ \
+        -v $ROS_LASER_SIM/src:/root/catkin_ws/src/ \
         ros-melodic-desktop-full \
         bash 

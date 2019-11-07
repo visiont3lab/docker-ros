@@ -12,7 +12,7 @@
         -e PULSE_SERVER=unix:${XDG_RUNTIME_DIR}/pulse/native \
         -v ${XDG_RUNTIME_DIR}/pulse/native:${XDG_RUNTIME_DIR}/pulse/native:Z \
         --group-add $(getent group audio | cut -d: -f3) \
-        -v $MYROSWORKSPACE/scripts/config.yaml:/root/.ignition/fuel/config.yaml  \
-        -v $MYROSWORKSPACE/src:/root/catkin_ws/src/ \
+        -v $ROS_LASER_SIM/scripts/config.yaml:/root/.ignition/fuel/config.yaml  \
+        -v $ROS_LASER_SIM/src:/root/catkin_ws/src/ \
         ros-melodic-desktop-full \
         bash 
