@@ -10,12 +10,12 @@ import math
 class LaserPublisher:
 
     def __init__(self):
-        self.laser_pub = rospy.Publisher("/rrbot/laser/scan",LaserScan,queue_size=1)
+        self.laser_pub = rospy.Publisher("/laser/scan",LaserScan,queue_size=1)
         self.count = 0
       
     def prepare_data(self):
-        filename = "/root/catkin_ws/src/laser_publisher/src/vuoto_out.json"
-        #filename = "/root/catkin_ws/src/laser_publisher/src/sagoma_out.json"
+        #filename = "/root/catkin_ws/src/laser_publisher/src/vuoto_out.json"
+        filename = "/root/catkin_ws/src/laser_publisher/src/sagoma_out.json"
         
 
         #Read JSON data into the datastore variable

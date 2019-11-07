@@ -1,10 +1,10 @@
 ## Docker ROS
+We are going to simulation an laser scan acquisition using RVIZ. Everything will run inside a docker container.
 
 ## Requirements
 Install docker
 
 ## Setup 
-Development environment for using ROS with both simualtion and real time.
 
 Setup environment variable
 
@@ -15,20 +15,33 @@ echo "export MYROSWORKSPACE=$HOME/docker-ros" >> $HOME/.bashrc && source $HOME/.
 Build docker
 
 ```
-cd $MYWORKSPACE
-docker build -t ros_melodic_desktop_full .
+cd $MYROSWORKSPACE && docker build -t ros_melodic_desktop_full .
 ```
+
+## Launch laser simulation
+
+```
+cd $MYROSWORKSPACE/srcipts && ./launch_laser_sim.sh
+```
+
+After finishing remember to type 
+
+```
+docker stop ros_melodic_desktop_sim
+```
+
+## Development purpose 
 
 Real world docker
 
 ```
-cd $MYWORKSPACE/scripts && ./start_docker_real.sh
+cd $MYROSWORKSPACE/scripts && ./start_docker_real.sh
 ```
 
 Simulation docker 
 
 ```
-cd $MYWORKSPACE/scripts && ./start_docker_sim.sh
+cd $MYROSWORKSPACE/scripts && ./start_docker_sim.sh
 ```
 
 ## Useful commands
