@@ -2,7 +2,7 @@
 
     xhost +local:docker && \
     docker run -it --rm\
-        --name ros_melodic_desktop_sim \
+        --name ros_melodic_desktop_laser_sim \
         --env="DISPLAY=$DISPLAY" \
         --env="QT_X11_NO_MITSHM=1" \
         --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
@@ -14,5 +14,5 @@
         --group-add $(getent group audio | cut -d: -f3) \
         -v $ROS_LASER_SIM/scripts/config.yaml:/root/.ignition/fuel/config.yaml  \
         -v $ROS_LASER_SIM/src:/root/catkin_ws/src/ \
-        ros-melodic-desktop-full \
+        visiont3lab/ros-melodic-desktop-full:x86 \
         bash 
