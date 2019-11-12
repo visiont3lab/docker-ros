@@ -14,8 +14,8 @@ We are going to simulation an laser scan acquisition using RVIZ. Everything will
 
 ```
 cd $HOME
-sudo apt install xfce4-terminal
-git clone https://github.com/visiont3lab/docker-ros-laser-sim.git
+sudo apt install xfce4-terminal && \
+git clone https://github.com/visiont3lab/docker-ros-laser-sim.git && \
 echo "export ROS_LASER_SIM=$HOME/docker-ros-laser-sim" >> $HOME/.bashrc && source $HOME/.bashrc
 ```
 Feel free to modify the path as you like!
