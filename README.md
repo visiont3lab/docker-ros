@@ -29,7 +29,7 @@ cd $ROS_LASER_SIM/scripts && ./launch_laser_sim.sh
 After finishing remember to type 
 
 ```
-docker stop ros_melodic_desktop_rrbot_sim
+docker stop ros_melodic_desktop_laser_sim
 ```
 
 ## References
